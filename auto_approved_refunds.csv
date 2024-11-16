@@ -1,0 +1,3 @@
+order_id,customer_id,purchase_amount,return_reason_code,customer_return_rate,refund_approved
+101,C001,60.0,1,0.04,1
+104,C004,35.0,4,0.01,1
