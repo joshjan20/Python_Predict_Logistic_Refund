@@ -1,0 +1,13 @@
+-- Identify orders eligible for refund
+SELECT 
+    order_id,
+    customer_id,
+    purchase_date,
+    return_status,
+    reason_code
+FROM 
+    orders
+WHERE 
+    return_status = 'Requested'
+    AND DATEDIFF(CURDATE(), purchase_date) <= 30;
+
